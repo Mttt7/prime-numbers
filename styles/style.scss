@@ -30,12 +30,19 @@ font-family: var(--titillium-font);
 }
 body{
     background-color: var(--sec-color);
+    
 }
 
 
-// FIRST PAGE
+
 @media (max-width:560px) {
-    
+   // FIRST PAGE 
+
+.snap-container{
+    height: 200vh;
+}
+
+
 
 .header{
     display: flex;
@@ -43,8 +50,15 @@ body{
     align-items: center;
     background-color: var(--main-color);
     color: var(--third-color);
-    font-size: 4rem;
-    padding: 20px 10px;
+    font-size: 3rem;
+    
+    position: sticky;
+    top:0;
+    
+    
+
+    
+    
 }
 
 .num-select-wrapper{
@@ -86,6 +100,12 @@ body{
 
 
 
+
+
+//SECOND PAGE
+.second-page{
+
+}
 
 }
 

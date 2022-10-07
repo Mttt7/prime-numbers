@@ -32,14 +32,19 @@ body {
 }
 
 @media (max-width: 560px) {
+  .snap-container {
+    height: 200vh;
+  }
   .header {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--main-color);
     color: var(--third-color);
-    font-size: 4rem;
-    padding: 20px 10px;
+    font-size: 3rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
   .num-select-wrapper {
     background-color: var(--sec-color);
