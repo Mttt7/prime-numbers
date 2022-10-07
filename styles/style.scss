@@ -23,10 +23,13 @@ time, mark, audio, video {
 :root{
 --main-color:#ee352a;
 --sec-color:#fbfae6;
---third-color:#3b3b3b;
+--third-color:#ffffff;
 --titillium-font:'Titillium Web', sans-serif;;
 font-family: var(--titillium-font);
 
+}
+body{
+    background-color: var(--sec-color);
 }
 
 
@@ -44,8 +47,57 @@ font-family: var(--titillium-font);
     padding: 20px 10px;
 }
 
+.num-select-wrapper{
+    background-color: var(--sec-color);
+    display: flex;
+    width: 100%;
+    font-size: 2rem;
+    justify-content: center;
+    padding: 10px ;
+
+    #num{
+    font-size: 2rem;
+    width: 30%;
+}
+
+
+
+}
+
+.cheks-wrapper{
+    padding-top: 5%;
+    background-color: var(--sec-color);
+    font-size: 1.8rem;
+    
+
+    #mode{
+        font-size: 1.4rem;
+    }
+
+    .check-button{
+        background-color: var(--main-color);
+        padding: 10px 25px;
+        margin: 10px;
+        margin-top: 10%;
+        border-radius: 15px;
+        color: var(--third-color);
+    }
+}
 
 
 
 
+}
+
+
+
+
+
+
+
+.centered{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
