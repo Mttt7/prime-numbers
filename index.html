@@ -8,6 +8,46 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    
+
+    <div class="snap-container">
+        <div class="first-page snap-element" id="top">
+
+            <div class="header">isPrime?</div>
+            <div class="num-select-wrapper">
+                <label for="num">num: </label>
+                <input type="number" name="num" id="num" min="2" max="1000">
+            </div>
+
+            <div class="cheks-wrapper">
+                <label for="mode">Select mode</label>
+                <select name="mode" id="mode">
+                    <option value="yes-no">yes/no</option>
+                    <option value="show-smaller">show smaller</option>
+                    <option value="simulation">simulation</option>
+                </select>
+                <div class="check-button">CHECK</div>
+            </div>
+
+        </div>
+
+        <div class="second-page snap-element" id="bot">
+            <div class="simulation-wrapper">
+
+            </div>
+
+            <div class="result"> X is prime </div>
+
+            <div class="go-up">RESET</div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>
