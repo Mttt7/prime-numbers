@@ -115,6 +115,9 @@ body{
     #second-page-starter{
         padding-top: 100px;
     }
+    .content-page-2{
+        flex:1 0 auto;
+    }
     .result{
         background-color: rgb(43, 178, 43);
         padding: 3% 10%;
@@ -122,9 +125,19 @@ body{
         font-size: 1.9rem;
     }
 
-    .content-page-2{
-        flex:1 0 auto;
+    .simulation-wrapper{
+        display: grid;
+        grid-template-columns: repeat(10,30px);
+        grid-template-rows: repeat(10,30px);
+
+
+        
     }
+
+
+
+
+
     .reset{
         margin-bottom: 32%;
 

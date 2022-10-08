@@ -82,14 +82,19 @@ body {
 .second-page #second-page-starter {
   padding-top: 100px;
 }
+.second-page .content-page-2 {
+  flex: 1 0 auto;
+}
 .second-page .result {
   background-color: rgb(43, 178, 43);
   padding: 3% 10%;
   border-radius: 12px;
   font-size: 1.9rem;
 }
-.second-page .content-page-2 {
-  flex: 1 0 auto;
+.second-page .simulation-wrapper {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  grid-template-rows: repeat(10, 30px);
 }
 .second-page .reset {
   margin-bottom: 32%;
