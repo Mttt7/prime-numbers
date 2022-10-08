@@ -24,6 +24,8 @@ time, mark, audio, video {
 --main-color:#ee352a;
 --sec-color:#fbfae6;
 --third-color:#ffffff;
+--cell--color:rgba(24, 81, 214, 0.677);
+
 --titillium-font:'Titillium Web', sans-serif;;
 font-family: var(--titillium-font);
 
@@ -126,10 +128,21 @@ body{
     }
 
     .simulation-wrapper{
+        padding: 30px 0px;
         display: grid;
         grid-template-columns: repeat(10,30px);
         grid-template-rows: repeat(10,30px);
+        gap: 1px;
+        
 
+        .cell{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--cell--color);
+            color: var(--third-color);
+            font-size: 1.2rem;
+        }
 
         
     }
