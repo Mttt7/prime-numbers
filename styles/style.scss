@@ -182,14 +182,14 @@ body{
 // SNAP SCROLL
 
 .snap-container{
-    scroll-snap-type: y mandatory;
+   // scroll-snap-type: y mandatory;
    // overflow: auto;
-   overflow-y:scroll ;
-   scroll-behavior: smooth;
+   //overflow-y:scroll ;
+   //scroll-behavior: smooth;
 }
 
 .snap-element{
-    scroll-snap-align: start;
+   // scroll-snap-align: start;
 }
 
 .snap-container,

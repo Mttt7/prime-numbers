@@ -122,17 +122,6 @@ body {
   justify-content: center;
 }
 
-.snap-container {
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-}
-
-.snap-element {
-  scroll-snap-align: start;
-}
-
 .snap-container,
 .snap-element {
   max-width: 100vw;
