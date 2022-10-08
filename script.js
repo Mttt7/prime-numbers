@@ -12,6 +12,8 @@ let animation=false
 
 simulation.style.display ="none"
 
+reset()
+
 checkBtn.addEventListener('click',proceed)
 resetBtn.addEventListener('click',reset)
 
@@ -49,6 +51,10 @@ function reset(){
         simulation.removeChild(c)
     })
     simulation.style.display ="none"
+    primes=[]
+    notPrimes=[]
+    displayArea.textContent = "choose a number >2"
+    displayArea.style.backgroundColor = "rgba(37, 37, 205, 0.744)"
 
 }
 
@@ -58,8 +64,8 @@ function drawGrid(){
     cell.classList.add('cell')
     cell.setAttribute("data-num","1")
     let rows = Math.ceil(num/10)
-    simulation.style.gridTemplateColumns=`repeat(10,30px)`
-    simulation.style.gridTemplateRows = `repeat(${rows},30px)`
+    simulation.style.gridTemplateColumns=`repeat(10,28px)`
+    simulation.style.gridTemplateRows = `repeat(${rows},28px)`
 
     for(let i = 1; i<=num; i++){
         const clonedCell=cell.cloneNode(false)

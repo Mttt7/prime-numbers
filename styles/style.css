@@ -103,7 +103,7 @@ body {
   justify-content: center;
   background-color: var(--cell--color);
   color: var(--third-color);
-  font-size: 1.2rem;
+  font-size: 0.9rem;
 }
 .second-page .reset {
   margin-bottom: 32%;
@@ -140,7 +140,7 @@ body {
 }
 
 .first-page {
-  height: 40vh;
+  height: auto;
 }
 
 .second-page {

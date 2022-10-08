@@ -32,7 +32,7 @@ font-family: var(--titillium-font);
 }
 body{
     background-color: var(--sec-color);
-    
+       
 }
 
 //HEADER
@@ -140,7 +140,7 @@ body{
             justify-content: center;
             background-color: var(--cell--color);
             color: var(--third-color);
-            font-size: 1.2rem;
+            font-size: 0.9rem;
         }
 
         
@@ -199,8 +199,8 @@ body{
   }
 
   .first-page{
-    
-    height: 40vh;
+    // change to 40 vh ???
+    height: auto;
   }
   //???
   .second-page{
