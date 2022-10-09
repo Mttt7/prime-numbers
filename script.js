@@ -17,6 +17,20 @@ reset()
 checkBtn.addEventListener('click',proceed)
 resetBtn.addEventListener('click',reset)
 
+
+
+function isproper(n){
+    let prop = true
+    if(n>4999 || n<2) prop=false
+    if (!(Number.isInteger(n))) prop=false
+    console.log(prop)
+    return prop
+}
+    
+function invalidNum(){
+    displayArea.textContent = "Invalid number! choose a number >2 and <4999"
+    displayArea.style.backgroundColor = "rgba(37, 37, 205, 0.744)"
+}
 function proceed(){
 
     num = null
@@ -32,6 +46,11 @@ function proceed(){
 
     
     num = Number(numForm.value)
+    if(!(isproper(num))){
+        invalidNum()
+        return
+        
+    }
     mode = modeForm.checked 
     console.log(mode)
     
@@ -79,8 +98,8 @@ function drawGrid(){
     cell.classList.add('cell')
     cell.setAttribute("data-num","1")
     let rows = Math.ceil(num/10)
-    simulation.style.gridTemplateColumns=`repeat(10,28px)`
-    simulation.style.gridTemplateRows = `repeat(${rows},28px)`
+    simulation.style.gridTemplateColumns=`repeat(10,32px)`
+    simulation.style.gridTemplateRows = `repeat(${rows},32px)`
 
     for(let i = 1; i<=num; i++){
         const clonedCell=cell.cloneNode(false)

@@ -70,6 +70,11 @@ a {
   font-size: 2rem;
   width: 30%;
 }
+@media (min-width: 500px) {
+  .first-page .num-select-wrapper #num {
+    width: 15%;
+  }
+}
 .first-page .cheks-wrapper {
   padding-top: 20px;
   background-color: var(--sec-color);
@@ -158,7 +163,7 @@ a {
   justify-content: center;
   background-color: var(--cell--color);
   color: var(--third-color);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 .second-page .reset {
   margin-bottom: 32%;

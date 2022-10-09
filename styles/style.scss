@@ -85,6 +85,9 @@ a{
         #num{
         font-size: 2rem;
         width: 30%;
+        @media (min-width:500px) {
+            width: 15%;
+        }
     }
 
 
@@ -196,7 +199,8 @@ a{
             justify-content: center;
             background-color: var(--cell--color);
             color: var(--third-color);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
+            
         }
 
         
