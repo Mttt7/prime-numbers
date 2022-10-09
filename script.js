@@ -20,10 +20,11 @@ resetBtn.addEventListener('click',reset)
 function proceed(){
     reset()
     num = Number(numForm.value)
-    mode = modeForm.value 
+    mode = modeForm.checked 
+    console.log(mode)
     
-    if(!(mode=='yes-no')) simulation.style.display ="grid"
-    if(mode=='simulation') animation=true
+    if(mode) simulation.style.display ="grid"
+    
     drawGrid()
     primeCheck()
     displayResult()
@@ -33,7 +34,7 @@ function proceed(){
 function displayResult(){
     if(primes.includes(num)){
         displayArea.textContent = `${num} is prime number`
-        displayArea.style.backgroundColor = "rgb(43, 178, 43)"
+        displayArea.style.backgroundColor = "#27AE60"
     }
     else if(notPrimes.includes(num)){
         displayArea.textContent = `${num} is NOT prime number`
@@ -125,12 +126,12 @@ function setColor(x,pr){
     if(pr){
         cell = document.querySelector(`[data-num="${x}"]`)
         
-        cell.style.backgroundColor="green"
+        cell.style.backgroundColor="#27AE60"
         
     }
     else{
         cell = document.querySelector(`[data-num="${x}"]`)
-        cell.style.backgroundColor="red"
+        cell.style.backgroundColor="#ee352a"
     }
 
 }
