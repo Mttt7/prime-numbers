@@ -36,6 +36,9 @@ body{
    // width: 100vw;
        
 }
+a{
+    text-decoration: none;
+}
 
 //HEADER
 .header{
@@ -48,11 +51,11 @@ body{
     
     position: sticky;
     top:0;
+    @media (min-width:500px) {
+        font-size: 4rem;
+    }
     
-    
-@media (max-width:500px) {
-// padding-top:40px ;
-}
+
     
     
 }
@@ -74,6 +77,7 @@ body{
         justify-content: center;
         padding: 10px 0;
         padding-top: 80px;
+       
         
         .space{
             margin-bottom: 20px;
@@ -147,6 +151,10 @@ body{
             margin-top: 10%;
             border-radius: 15px;
             color: var(--third-color);
+            cursor: pointer;
+            @media (min-width:500px) {
+                margin-top: 2%;
+            }
         }
     }
 
@@ -170,6 +178,9 @@ body{
         padding: 3% 10%;
         border-radius: 12px;
         font-size: 1.3rem;
+        @media (min-width:500px) {
+            padding: 1% 5%;
+        }
     }
 
     .simulation-wrapper{
@@ -203,6 +214,10 @@ body{
         color: var(--third-color);
         font-size: 2rem;
         border-radius: 20px;
+        cursor: pointer;
+        @media (min-width:500px) {
+            margin-top: 5%;
+        }
     }
 
 

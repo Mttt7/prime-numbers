@@ -18,7 +18,19 @@ checkBtn.addEventListener('click',proceed)
 resetBtn.addEventListener('click',reset)
 
 function proceed(){
-    reset()
+
+    num = null
+    mode = null
+    const cells=document.querySelectorAll(".cell")
+    cells.forEach((c)=>{
+        simulation.removeChild(c)
+    })
+    simulation.style.display ="none"
+    primes=[]
+    notPrimes=[]
+
+
+    
     num = Number(numForm.value)
     mode = modeForm.checked 
     console.log(mode)
@@ -44,7 +56,8 @@ function displayResult(){
 }
 
 function reset(){
-    animation=false
+    numForm.value=''
+   
     num = null
     mode = null
     const cells=document.querySelectorAll(".cell")
@@ -56,6 +69,7 @@ function reset(){
     notPrimes=[]
     displayArea.textContent = "choose a number >2"
     displayArea.style.backgroundColor = "rgba(37, 37, 205, 0.744)"
+    
 
 }
 
